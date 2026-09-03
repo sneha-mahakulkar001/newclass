@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VS Studio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"href="styal-vs.studuio.h.css">
+</head>
+
+<body>
+  <div class="grid-overlay"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <img src="logo_2.1-removebg-preview.png" alt="VS Studio Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#work">
+              Our Work
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contactuss.html">
+              Contact Us
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <div>
+    <section class="gallery-container">
+      <div class="floating-text left-text">
+        <h2 id="dynamic-title"></h2>
+        <p id="dynamic-desc"></p>
+      </div>
+
+      <div class="scene">
+        <div class="sphere" id="sphere">
+        </div>
+      </div>
+
+      <svg class="network-lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path d="M0,50 Q25,30 50,50 T100,50" stroke="rgba(255,255,255,0.05)" stroke-width="0.2" fill="none" />
+        <path d="M20,0 L80,100" stroke="rgba(255,255,255,0.03)" stroke-width="0.2" fill="none" />
+      </svg>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </div>
+  <section class="trust-section">
+
+    <div class="trust-container">
+
+      <div class="trust-item">
+        25 YEARS
+        <span>OF TRUST</span>
+      </div>
+
+      <div class="trust-item">
+        ALL INDIA
+        <span>OUR SERVICE</span>
+      </div>
+
+      <div class="trust-item">
+        27+ YEARS
+        <span>OF EXPERIENCE</span>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="work-section" id="work">
+
+    <h2 class="section-title">
+      Our Work
+    </h2>
+
+    <div class="work-grid">
+      <div>
+
+        <div class="work-card">
+
+          <img src="baby shoot 1-2.webp" alt="Baby Photography">
+
+          <div class="card-overlay">
+            <h3>Baby Shoot</h3>
+          </div>
+
+        </div>
+
+        <a href="babyshoot .html" class="work-button" alt="sdf">
+
+
+        </a>
+
+      </div>
+      <div>
+
+        <div class="work-card">
+          <a>
+            <img src="busssion.jpg" alt="Business Photography">
+
+          </a>
+
+
+          <div class="card-overlay">
+            <h3>Business</h3>
+          </div>
+
+        </div>
+
+        <a href="BUSS.html" class="work-button">
+        </a>
+
+      </div>
+      <div>
+
+        <div class="work-card">
+
+          <img src="https://www.redveds.com/wp-content/uploads/2023/10/NR-REDVEDS-39-scaled-1-2-1-1.jpeg"
+            alt="Wedding Photography">
+
+          <div class="card-overlay">
+            <h3>Wedding</h3>
+          </div>
+
+        </div>
+
+        <a href="wedding.html" class="work-button">
+
+
+        </a>
+
+      </div>
+
+      <div>
+
+        <div class="work-card">
+
+          <img src="car-07.jpeg" alt="Car Photography">
+
+          <div class="card-overlay">
+            <h3>Car Photography</h3>
+          </div>
+
+        </div>
+
+        <a href="car.html" class="work-button">
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="contact-section" id="contact">
+
+    <h2 class="contact-title">
+      Tell us what you need.
+    </h2>
+
+    <p class="contact-subtitle">
+      Fill the form below & we'll get in touch!
+    </p>
+
+
+    <form class="contact-form" id="contact">
+
+      <div class="mb-3">
+        <label class="form-label">
+          Name
+        </label>
+        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">
+          Number
+        </label><input type="tel" class="form-control" placeholder="Your Phone Number" required>
+
+      </div>
+      <div class="mb-3">
+        <label class="form-label">
+          Email
+        </label>
+        <input type="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">
+          What Are You Looking For?
+        </label>
+        <select class="form-select" required>
+
+          <option value="">
+            Select Service
+          </option>
+
+          <option value="videography">
+            Videography
+          </option>
+
+          <option value="editing">
+            Video Editing
+          </option>
+
+          <option value="photography">
+            Photography
+          </option>
+
+          <option value="wedding">
+            Wedding Photography
+          </option>
+
+          <option value="baby">
+            Baby Photography
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="mb-3">
+
+        <label class="form-label">
+          Your Message
+        </label>
+
+        <textarea class="form-control" rows="5" placeholder="Write your message..." required></textarea>
+
+      </div>
+
+
+      <button type="submit" class="submit-btn">
+
+        Submit Form
+
+      </button>
+
+    </form>
+
+  </section>
+
+
+
+  <footer>
+
+    <div class="footer-container">
+
+      <div class="footer-logo">
+
+        <img src="logo_2.1-removebg-preview.png" alt="VS Studio">
+
+      </div>
+
+
+      <div class="footer-text">
+
+        © 2026 VS Studio.
+        All rights reserved.
+        <br>
+
+        vs-studio@gmail.com
+        |
+        +91 8766696217
+
+      </div>
+
+    </div>
+
+  </footer>
+  <script> 
+  document.getElementById("contact").addEventListener("submit", function (e) { e.preventDefault(); const name = document.getElementById("name").value; const message = `Hello, my name is ${name}. I submitted the form.`; const whatsappNumber = "918766696217"; const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`; window.open(whatsappUrl, "_blank"); }); 
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script>
+    // Register GSAP Plugins
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Provided Image Assets
+    const images = [
+      "business2.2 copy.jpeg",
+      "OIP.webp",
+      "baby shoot 1-3.webp",
+      "business2.4.jpg",
+      "baby shoot 1-2.webp",
+      "babyphoto.jpg",
+      "car-07.jpeg",
+      "baby shoot-3.jpg",
+      "photo baby.webp",
+      "Maternity Photography.jpg",
+      "mit.webp"
+    ];
+
+    // Duplicate to create a full dense sphere
+    const galleryItems = [...images, ...images, ...images].slice(0, 24);
+
+    const textContent = [
+      {
+        title: "Running Through Reflection",
+        desc:
+          "One photo was taken on a rainy day at a running track. It is a tape of water covered the surface..."
+      },
+      {
+        title: "Elegance in Boldness",
+        desc:
+          "This photo was captured in a controlled studio environment, emphasizing strong features and deep contrast."
+      },
+      {
+        title: "Dynamic Moments",
+        desc:
+          "Capturing the pure essence of speed and raw emotion in a split-second frame."
+      },
+      {
+        title: "Abstract Movement",
+        desc:
+          "The flow of time expressed visually through long exposures and deliberate camera movement."
+      }
+    ];
+
+    const sphere = document.getElementById("sphere");
+    const radius = window.innerWidth < 768 ? 200 : 380;
+
+    // 1. Generate Fibonacci Sphere 3D Layout
+    galleryItems.forEach((src, i) => {
+      const card = document.createElement("div");
+      card.classList.add("clay-card");
+
+      const img = document.createElement("img");
+      img.src = src;
+      card.appendChild(img);
+
+      // Math for Fibonacci sphere distribution
+      const phi = Math.acos(1 - (2 * (i + 0.5)) / galleryItems.length);
+      const theta = Math.PI * (1 + Math.sqrt(5)) * i;
+
+      const x = radius * Math.cos(theta) * Math.sin(phi);
+      const y = radius * Math.sin(theta) * Math.sin(phi);
+      const z = radius * Math.cos(phi);
+
+      // Calculate rotation so cards face outward relative to the center
+      const rotY = Math.atan2(x, z) * (180 / Math.PI);
+      const rotX = Math.asin(-y / radius) * (180 / Math.PI);
+
+      card.style.transform = `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rotY}deg) rotateX(${rotX}deg)`;
+
+      // Store original Z rotation for scroll highlighting
+      card.dataset.index = i;
+      sphere.appendChild(card);
+    });
+
+    // 2. Animate Sphere on Scroll
+    let sphereRotation = gsap.to(sphere, {
+      rotateY: 360 * 2, // 2 full rotations
+      rotateX: 45, // Slight tilt for 3D depth
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".gallery-container",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onUpdate: (self) => updateActiveCard(self.progress)
+      }
+    });
+
+    // 3. Highlight Front-Facing Card and Update Text
+    const titleEl = document.getElementById("dynamic-title");
+    const descEl = document.getElementById("dynamic-desc");
+    const allCards = document.querySelectorAll(".clay-card");
+
+    function updateActiveCard(progress) {
+      // Determine which text index to show based on progress
+      const textIndex =
+        Math.floor(progress * textContent.length) % textContent.length;
+
+      if (titleEl.innerText !== textContent[textIndex].title) {
+        // Fade out/in effect for text
+        gsap.to([titleEl, descEl], {
+          opacity: 0,
+          duration: 0.2,
+          onComplete: () => {
+            titleEl.innerText = textContent[textIndex].title;
+            descEl.innerText = textContent[textIndex].desc;
+            gsap.to([titleEl, descEl], { opacity: 1, duration: 0.2 });
+          }
+        });
+      }
+
+      // Highlight a few cards simulating coming to the front focus
+      const focusIndex = Math.floor(progress * galleryItems.length);
+      allCards.forEach((card, idx) => {
+        if (Math.abs(idx - focusIndex) < 2) {
+          card.classList.add("active-card");
+        } else {
+          card.classList.remove("active-card");
+        }
+      });
+    }
+
+    // 4. Generate Scatter/Constellation in Journey Section
+    const constellation = document.getElementById("constellation");
+    const scatterPositions = [
+      { top: "10%", left: "15%" },
+      { top: "20%", left: "80%" },
+      { top: "60%", left: "10%" },
+      { top: "75%", left: "85%" },
+      { top: "85%", left: "30%" },
+      { top: "15%", left: "50%" }
+    ];
+
+    scatterPositions.forEach((pos, i) => {
+      const card = document.createElement("div");
+      card.classList.add("clay-card", "constellation-card");
+      card.style.top = pos.top;
+      card.style.left = pos.left;
+
+      // Add varying rotation for messy scatter look
+      const rot = (Math.random() - 0.5) * 40;
+      card.style.transform = `rotate(${rot}deg) scale(0.8)`;
+
+      const img = document.createElement("img");
+      img.src = images[i % images.length];
+      card.appendChild(img);
+
+      constellation.appendChild(card);
+    });
+
+    // Parallax effect for scattered cards
+    gsap.to(".constellation-card", {
+      y: -100,
+      ease: "none",
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: ".journey-section",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+  </script>
+
+
+</body>
+
+</html>
